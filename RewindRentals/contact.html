@@ -1,0 +1,72 @@
+<!--This source code is created by Victor Chua Jia Zhi ID: 3418248 Updated Date:28/10/2022-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rewind Rental</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="header">  <!--to create a div header class to style and place navigation bar-->
+    <div class ="container"> <!--to contain navigation bar for display and styling-->
+        <div class ="navigationbar">
+            <div class ="logo">RR</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li> <!--homepage-->
+                    <li><a href="about.html">about us</a></li> <!--linking to about us page-->
+                    <li><a href="contact.html">contact us</a></li> <!--linking to contact page-->
+                    <li><a href="privacy.html">privacy policy</a></li> <!--linking to privacy page-->
+                    <li><a href="terms.html">terms</a></li> <!--linking to terms page-->
+                    <li class="advance"> <!--creating advance navigation bar-->
+                        <a href="" class="advancebar">Products</a> <!--to score 5 marks for advanced navigation but no requirement to include a product html page-->
+                        <div class="advancenav">
+                        <a href = "">Games</a>
+                        <a href = "">Movies</a>
+                    </div>
+                 </ul>
+               </nav>
+            </div>
+       </div>
+    <h1>Contact us</h1>
+    <p>Need help? Fill in the form or look at our contact details at the bottom of the page</p>
+</div>
+        <!--container to contain all the form for styling-->
+        <div class ="container2">
+            <div class="contact">
+                <div class ="box1">
+                    <h2>Fill in the form</h2>
+                    <form action="https://jkorpela.fi/cgi-bin/echo.cgi " method="POST"> <!--Form will get be poseted to the given website-->
+                        <div class ="getdata">
+                            <div class ="getgroup"> <!-- to get user name-->
+                                <label>Name</label>
+                                <input type ="text" id ="nametext" name = "name" placeholder ="Enter your name" required> <!--using required so user have to fill in all boxes-->
+                            </div>
+                            <div class ="getgroup"> <!-- to get email -->
+                                <label>Email</label>
+                                <input type ="text" id ="emailtext" name = "email" placeholder ="Enter your email" required>
+                            </div>
+                            <div class ="getgroup"> <!-- to get subject-->
+                                <label>Subject</label>
+                                <input type ="text" id ="subjecttext" name = "subject" placeholder ="Subject" required>
+                            </div>
+                            <label>Message : </label> <!--To input message box so user can type their message-->
+                            <textarea id ="messagetext" name = "message" placeholder="what is your message" required></textarea>
+                            <div class ="rdbtn">
+                                <div class ="radiobox">
+                                        <input type ="radio" name ="Urgent" value ="Urgent">Urgent <input type ="radio" name ="Urgent" value ="Non-Urgent">Non-Urgent
+                              </div>
+                        </div>
+                            </div>
+                            <button type ="submit">submit</button>
+                            <button type ="reset">reset</button>
+                    </form>
+                </div>
+            </div>
+                    <h3> Our contact</h3> <!--- contact form for users to see our email, contact number and address-->
+                    <p><em>Please email us @c3418248@uon.au.edu <br> Contact number : 92138831113 <br> Address : Choa Chua Crescent </em></p>
+                </div>
+    <div class="copy">
+    <address>&copy; This website is designed by Victor Chua Jia Zhi<br>Student ID : 3418248</address>
+    </div>
+</body>
+</html>

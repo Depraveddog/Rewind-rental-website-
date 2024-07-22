@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "yes" ?>
+<!--This Xml code is created by Victor Chua Jia Zhi Student ID : 3418248 Updated Date : 28/10/22-->
+<!DOCTYPE category[
+<!ELEMENT category (product+)> <!--category must have at least one product -->
+<!ATTLIST category type CDATA #REQUIRED>
+<!ELEMENT product (name+,description,rentalcost,search*,parentalrating?,condition?,rating,rdate,extras+,reviews?,filename+,path)> <!--child tag-->
+<!ELEMENT name (#PCDATA)> <!--Parsed Character Data-->
+<!ATTLIST name delivery (digital|physical) #REQUIRED> <!--can either be digital or physical, one is required-->
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT rentalcost (#PCDATA)>
+<!ELEMENT search (#PCDATA)>
+<!ATTLIST search tag CDATA #REQUIRED> <!--required to enter search tag attribute-->
+<!ELEMENT parentalrating (#PCDATA)>
+<!ELEMENT condition (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT rdate (#PCDATA)>
+<!ELEMENT extras (extraname+,addcost+)>
+<!ELEMENT extraname (#PCDATA)>
+<!ELEMENT addcost (#PCDATA)>
+<!ELEMENT reviews (#PCDATA)>
+<!ELEMENT filename (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ENTITY game "game"> <!--creating a entity to create game name-->
+<!ENTITY movie "movie"><!--creating a a entity to create movie name-->
+]>
+
+
+ <category type ="&game;"> 
+ <product>
+  <name delivery ="digital">Watch dogs</name>
+  <description>Watch Dogs is a 2014 action-adventure game developed by Ubisoft Montreal and published by Ubisoft</description>
+  <rentalcost>$10/month</rentalcost>
+  <search tag = "shooting">First Person Shooter</search>
+  <parentalrating>18+</parentalrating>
+  <condition>good</condition>
+  <rating>5/5</rating>
+  <rdate>27/04/2014</rdate>
+  <extras>
+   <extraname>gold edition</extraname>
+   <addcost>Included</addcost>
+  </extras>
+  <reviews>Reviews from previous customer: good </reviews>
+  <filename>c3418248/images/game1.jpg</filename>
+  <path>www.watchdog.com</path>
+  </product>
+   
+  <product>
+  <name delivery ="physical">Act of War</name> 
+  <description>Direct Action is a real-time strategy game developed by Eugen Systems and published by Atari.</description>
+  <rentalcost>$20/month</rentalcost>
+  <search tag = "battlefield">First Person Shooter in battlefield</search>
+  <parentalrating>16+</parentalrating>
+  <condition>excellent</condition>
+  <rating>3/5</rating>
+  <rdate>15/03/2005</rdate>
+  <extras>
+   <extraname>war extension</extraname>
+   <addcost>$2/month</addcost>
+  </extras>
+  <reviews>Reviews from previous customer: moderate </reviews>
+  <filename>c3418248/images/game2.jpg</filename>
+  <path>www.actofwar.com</path>
+  </product>
+ 
+  <product>
+  <name delivery ="digital">Uncharted</name> 
+  <description>
+    Uncharted is an action-adventure video game franchise published by Sony Interactive Entertainment and 
+    developed by Naughty Dog.
+  </description>
+  <rentalcost>$12/month</rentalcost>
+  <search tag = "stealing">stealing,jungle</search>
+  <parentalrating>12+</parentalrating>
+  <condition>poor</condition>
+  <rating>4/5</rating>
+  <rdate>10/06/2016</rdate>
+  <extras>
+   <extraname>legacy edition</extraname>
+   <addcost>$3.50/month</addcost>
+  </extras>
+  <reviews>Reviews from previous customer :amazing</reviews>
+  <filename>c3418248/images/game3.jpg</filename>
+  <path>www.uncharted.com</path>
+  </product>
+
+</category>

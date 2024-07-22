@@ -1,0 +1,118 @@
+<!--This source code is created by Victor Chua Jia Zhi ID: 3418248 Updated Date:28/10/2022-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rewind Rental</title> <!--Title of the WebPage-->
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="header">  <!--to create a div header class to style and place navigation bar-->
+    <div class ="container"> <!--to contain navigation bar for display and styling-->
+        <div class ="navigationbar"><!--Position of the NavigationBar-->
+            <div class ="logo">RR</div> <!--logo-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li> <!--homepage-->
+                    <li><a href="about.html">about us</a></li> <!--linking to about us page-->
+                    <li><a href="contact.html">contact us</a></li> <!--linking to contact page-->
+                    <li><a href="privacy.html">privacy policy</a></li> <!--linking to privacy page-->
+                    <li><a href="terms.html">terms</a></li> <!--linking to terms page-->
+                    <li class="advance"> <!--creating advance navigation bar-->
+                        <a href="" class="advancebar">Products</a> <!--to score 5 marks for advanced navigation but no requirement to include a product html page-->
+                        <div class="advancenav">
+                        <a href = "">Games</a>
+                        <a href = "">Movies</a>
+                    </div>
+                 </ul>
+               </nav>
+            </div>
+       </div>
+        <div class="row"> <!-- creating a div class to determine where the Heading and paragraphs will be at which row-->
+            <div class="column"> <!-- to create a div class to determine which column the heading and paragraph will be-->
+                <h1>Rewind <span class ="diff">Rentals</span> </h1> <!-- using a span tag to seperate word to style-->
+                <h2 id = "heading2-1"><u>Our mission:</u></h2> <!-- using id to seperate from other P to for styling in external css sheet-->
+                <p>Hello there!,Our company allow you to rent games and movies on our <abbr title ="Rewind Rentals">company</abbr>
+                <br> We have a new feature that allows customer to list their movies or games for rental! <br> Everyday we will change our featured products! so that other products will be featured </p>
+                <h2 id="heading2-2"><u>Our designer</u></h2>
+                <p>This website is created by <strong>Victor Chua Jia Zhi </strong>from <a href ="https://www.newcastle.edu.au"> University of Newcastle</a></p>
+                <h2 id ="heading2-3"><u>Contact: </u></h2>
+                <p>Feel free to <span class = "contact-text"><strong>contact us!</strong></span> click on the button to go to the contact page</p>
+                <a href ="contact.html" class ="button1">Contact us</a> <!-- creating a a href button linking to contact.html page-->
+            </div>
+        </div>
+    </div>
+    <!--display of featured movies -->
+    <div class="container2">
+        <h2 class="featuredline">Featured movies for the day</h2> <!--Display of product-->
+         <ul> <!-- unordered list for storing of images and descriptions-->
+                <li>
+                    <img src ="images/movie1.jpg" alt=""> <!-- calling images from images/...-->
+                    <div class="desc">
+                    <h4>Southland Tales</h4> <!--title-->
+                    <div>&starf;&starf;&starf;&starf;&starf;</div>  <!-- using &starf and &star; to display rating -->
+                    <p>an action star stricken with amnesia meets up with a adult actress who is developing her own reality TV project,
+                       and a policeman who holds the key to a vast conspiracy. <br>Price: $6/month <br></p>
+                    </div>
+                </li>
+                <li>
+                    <img src ="images/movie2.jpg" alt=""> <!-- calling images from images/...-->
+                    <div class="desc">
+                    <h4>The legend of Zorro</h4> <!--title-->
+                    <div>&starf;&starf;&starf;&star;&star;</div>  <!-- using &starf and &star; to display rating -->
+                    <p>Despite trying to keep his swashbuckling to a minimum, a threat to California&apos;s pending statehood 
+                       causes the adventure-loving Don Alejandro de la Vega and his wife, Elena, to take action. <br>Price: $4/month <br></p>
+                    </div>
+                </li>
+                <li>
+                    <img src ="images/movie3.jpg" alt=""> <!-- calling images from images/...-->
+                    <div class="desc">
+                    <h4>Special 26</h4> <!--title-->
+                    <div>&starf;&starf;&starf;&starf;&starf;</div> <!-- using &starf and &star; to display rating -->
+                    <p>A gang of con-men rob prominent rich businessmen and politicians by posing as C.B.I and income tax officers.<br>Price: $2/month <br></p>
+                    </div>
+                </li>
+        </ul>
+
+       
+    </div>
+    <!--Second Product Category-->
+        <div class="container2">
+        <h2 class="featuredline">Featured games for the day</h2> <!--Display of product-->
+        <ul>
+            <li>
+                    <img src ="images/game1.jpg" alt=""> <!-- calling images from images/...-->
+                    <div class="desc">
+                    <h4>WatchDogs</h4> <!--title-->
+                    <div>&starf;&starf;&starf;&starf;&starf;</div> <!-- using &starf and &star; to display rating -->
+                    <p>Watch Dogs is a 2014 action-adventure game developed by Ubisoft Montreal and published by Ubisoft <br>Price: $10/month <br></p>
+                    </div>
+            </li>
+            <li>
+                    <img src ="images/game2.jpg" alt=""> <!-- calling images from images/...-->
+                    <div class="desc">
+                    <h4>Act of War</h4> <!--title-->
+                    <div>&starf;&starf;&starf;&star;&star;</div>  <!-- using &starf and &star; to display rating -->
+                    <p>Act of War: Direct Action is a real-time strategy game developed by Eugen Systems and published by Atari.<br>Price: $20/month <br></p>
+                    </div>
+            </li>
+            <li>
+                    <img src ="images/game3.jpg" alt=""> <!-- calling images from images/...-->
+                    <div class="desc">
+                    <h4>Uncharted</h4> <!--title-->
+                    <div>&starf;&starf;&starf;&starf;&star;</div>  <!-- using &starf and &star; to display rating -->
+                    <p>Uncharted is an action-adventure video game franchise published by Sony Interactive Entertainment and 
+                    developed by Naughty Dog.<br>Price: $12/month <br></p>
+                    </div>
+            </li>
+        </ul>
+
+       
+    </div>
+
+    <!--CopyRight statement at the bottom-->
+    <div class="copy">
+    <address>&copy; This website is designed by Victor Chua Jia Zhi<br>Student ID : 3418248</address>
+    </div>
+
+</body>
+</html>

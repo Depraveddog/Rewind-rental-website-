@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "yes" ?>
+<!--This Xml code is created by Victor Chua Jia Zhi Student ID : 3418248 Updated Date : 28/10/22-->
+<!DOCTYPE category[
+<!ELEMENT category (product+)> <!--category must have at least one product -->
+<!ATTLIST category type CDATA #REQUIRED>
+<!ELEMENT product (name+,description,rentalcost,search*,parentalrating?,condition?,rating,rdate,extras+,reviews?,filename+,path)> <!--child tag-->
+<!ELEMENT name (#PCDATA)> <!--Parsed Character Data-->
+<!ATTLIST name delivery (digital|physical) #REQUIRED> <!--can either be digital or physical, one is required-->
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT rentalcost (#PCDATA)>
+<!ELEMENT search (#PCDATA)>
+<!ATTLIST search tag CDATA #REQUIRED> <!--required to enter search tag attribute-->
+<!ELEMENT parentalrating (#PCDATA)>
+<!ELEMENT condition (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT rdate (#PCDATA)>
+<!ELEMENT extras (extraname+,addcost+)>
+<!ELEMENT extraname (#PCDATA)>
+<!ELEMENT addcost (#PCDATA)>
+<!ELEMENT reviews (#PCDATA)>
+<!ELEMENT filename (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ENTITY game "game"> <!--creating a entity to create game name-->
+<!ENTITY movie "movie"><!--creating a a entity to create movie name-->
+]>
+<category type ="&movie;"> 
+ <product>
+  <name delivery ="physical">Southland Tales</name>
+  <description>
+   an action star stricken with amnesia meets up with a adult actress who is developing her own reality TV project,
+   and a policeman who holds the key to a vast conspiracy.
+  </description>
+  <rentalcost>$6/month</rentalcost>
+  <search tag = "Thrilling">Nuclear Attack</search>
+  <parentalrating>12+</parentalrating>
+  <condition>excellent</condition>
+  <rating>5/5</rating>
+  <rdate>14/11/2007</rdate>
+  <extras>
+   <extraname>Behind the scene</extraname>
+   <addcost>$1/month</addcost>
+  </extras>
+  <reviews>Reviews from previous customer: amazing</reviews>
+  <filename>c3418248/images/movie1.jpg</filename>
+  <path>www.SouthlandTales.com</path>
+  </product>
+   
+  <product>
+  <name delivery ="physical">The Legend of Zorro</name> 
+  <description>
+   Despite trying to keep his swashbuckling to a minimum, a threat to California&apos;s pending statehood 
+   causes the adventure-loving Don Alejandro de la Vega and his wife, Elena, to take action.
+  </description>
+  <rentalcost>$4/month</rentalcost>
+  <search tag = "hero">helping,stealing</search>
+  <parentalrating>16+</parentalrating>
+  <condition>poor</condition>
+  <rating>3/5</rating>
+  <rdate>27/10/2005</rdate>
+  <extras>
+   <extraname>Extension</extraname>
+   <addcost>Included</addcost>
+  </extras>
+  <reviews>Reviews from previous customer: bad </reviews>
+  <filename>c3418248/images/movie2.jpg</filename>
+  <path>www.thelegendofzorro.com</path>
+  </product>
+ 
+  <product>
+  <name delivery ="digital">Special 26</name> 
+  <description>
+   A gang of con-men rob prominent rich businessmen and politicians by posing as C.B.I and income tax officers.
+  </description>
+  <rentalcost>$2/month</rentalcost>
+  <search tag = "trickster">tricking</search>
+  <parentalrating>18+</parentalrating>
+  <condition>excellent</condition>
+  <rating>5/5</rating>
+  <rdate>8/02/2013</rdate>
+  <extras>
+   <extraname>trickster edition</extraname>
+   <addcost>$4.50/month</addcost>
+  </extras>
+  <reviews>Reviews from previous customer:excellent</reviews>
+  <filename>c3418248/images/movie3.jpg</filename>
+  <path>www.special26.com</path>
+  </product>
+
+</category>

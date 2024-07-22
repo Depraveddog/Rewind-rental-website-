@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "yes" ?>
+<!--This Xml code is created by Victor Chua Jia Zhi Student ID : 3418248 Updated Date : 28/10/22-->
+<!DOCTYPE category[
+<!ELEMENT category (product+)> <!--category must have at least one product -->
+<!ATTLIST category type CDATA #REQUIRED>
+<!ELEMENT product (name+,description,rentalcost,search*,parentalrating?,condition?,rating,rdate,extras+,reviews?,filename+,path)> <!--child tag-->
+<!ELEMENT name (#PCDATA)> <!--Parsed Character Data-->
+<!ATTLIST name delivery (digital|physical) #REQUIRED> <!--can either be digital or physical, one is required-->
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT rentalcost (#PCDATA)>
+<!ELEMENT search (#PCDATA)>
+<!ATTLIST search tag CDATA #REQUIRED> <!--required to enter search tag attribute-->
+<!ELEMENT parentalrating (#PCDATA)>
+<!ELEMENT condition (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT rdate (#PCDATA)>
+<!ELEMENT extras (extraname+,addcost+)>
+<!ELEMENT extraname (#PCDATA)>
+<!ELEMENT addcost (#PCDATA)>
+<!ELEMENT reviews (#PCDATA)>
+<!ELEMENT filename (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ENTITY game "game"> <!--creating a entity to create game name-->
+<!ENTITY movie "movie"><!--creating a a entity to create movie name-->
+]>
+
+<category type ="&movie;"> <!--using entity as a sample data, -->
+ <product>
+  <name delivery ="physical"></name> <!--physical or digital required-->
+  <description></description>
+  <rentalcost></rentalcost>
+  <search tag = "sample"></search> <!--sample data-->
+  <parentalrating></parentalrating>
+  <condition></condition>
+  <rating></rating>
+  <rdate></rdate>
+  <extras>
+   <extraname></extraname>
+   <addcost></addcost>
+  </extras>
+  <reviews></reviews>
+  <filename></filename>
+  <path></path>
+ </product>
+</category>

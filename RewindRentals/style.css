@@ -1,0 +1,322 @@
+/*index.html css part and all other html form uses some of style codes Student ID : 3418248 Updated Date : 27/10/22 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* adding background for body and font*/
+body{
+    font-family: 'Times New Roman',times,serif;
+    background : radial-gradient(#C0C0C0,#fff);
+
+}
+/*span tag used to display different count */
+.diff{
+    color: darkblue;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+/* importing background image */
+.header{
+    background-image: url(/images/background1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height : 100%;
+}
+/* to determine the space the container have*/
+.container{
+    max-width:1500px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/* to place navigation bar in flex and to align items */
+.navigationbar{
+    display: flex;
+    align-items:center;
+
+}
+/* to place navigation bar to the right*/
+ nav {
+    text-align:right;
+    padding-top : 20px;
+    flex : 1;
+    display: flex;
+    justify-content: right;
+}
+/* styling of Logo*/
+.logo{
+    font-size : 40px;
+    font-weight: bold;
+    color : darkblue;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+/* to display in inline-blocks and to remove the listing dots*/
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+/* to display in inline block and to capitalize the fonts and set margin to right*/
+nav ul li{
+    display: inline-block;
+    margin-right : 20px;
+    text-transform: capitalize;
+}
+/* advance bar positioning */
+ .advance {
+    display: inline-block;
+    color: darkblue;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+/*hiding the categorys first*/
+.advancenav {
+    display: none;
+    position: absolute;
+    background-color: #C0C0C0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  li.advance {
+    display: inline-block;
+  }
+  .advancenav a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .advance:hover .advancenav {
+    display: block;
+  }
+
+/* setting a ref to black colour and font size to 20 px and removing dots*/
+a{
+    font-size : 18px;
+    text-decoration: none;
+    color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+/* when mice moved to the a ref buttons or navigation bar it will move and display bigger font and different colours*/
+a:hover{
+    font-size: 30px;
+    color: #000080;
+}
+
+/* to determine the row position */
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+/* to determine the column position */
+.column{
+    flex-basis: 50%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Heading 1 in column1 styling*/
+.column h1{
+    margin: 25px 0 0 0;
+    font-size: 50px;
+    color :black;
+    padding-top :40px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+/*ID heading2-1 used for styling*/
+#heading2-1{
+    margin: 10px 0 0 0;
+    padding-top :20px;
+    font-size: 28px;
+    color :#0000CD;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+}
+/*ID heading2-2 used for styling*/
+#heading2-2{
+    margin: 10px 0 0 0;
+    font-size: 28px;
+    color :darkblue;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+}
+#heading2-3{
+    margin: 10px 0 0 0;
+    font-size: 28px;
+    color :darkblue;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+}
+/*Paragraph in column used for styling*/
+.column p{
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top : 15px;
+    background : rgba(230, 230, 232, 0.724);
+    padding: 15px;
+    border-radius : 5px;
+    box-shadow :  0 3px 6px rgba(0, 0, 0, 0.338), 0 3px 6px rgba(0,0,0,0.23);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+/* styling for button */
+.button1{
+    display: inline-block;
+    background: #C0C0C0;
+    color: black;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+/* styling for button to change background when mice placed */
+.button1:hover{
+    background: darkblue;
+    color: whitesmoke;
+}
+/* to determine the amount of space it can hold*/
+.container2{
+    max-width : 1000px;
+    margin: auto;
+    padding-left : 25px;
+    padding-right: 25px;
+}
+/* styling of text */
+.featuredline{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height : 60px;
+    text-transform: uppercase;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: #000080;
+}
+/* adding a line below the content */
+.featuredline::after{
+    content:'';
+    background: #000080;
+    width :80px;
+    height: 8px;
+    border-radius : 8px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%)
+}
+/* positioning and the same it can have*/
+.container2 ul li{
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding: 5px;
+}
+/* setting display to flex so photo and paragraph will be align*/
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 10PX;
+}
+/* styling stars */
+.desc div{
+    font-size: 24px;
+    color: #000080;
+} /* set image to float left */
+.container2 ul li img{
+    float: left;
+    height: auto;
+    width: 200px;
+    border-radius: 5px;
+}
+
+/* copyright statement to place it at the bottom-right*/
+.copy{
+    text-align-last :right;
+}
+/* Contact us css */
+.contact{
+    display:flex; 
+}
+/* determing the space of the box1 and to set how much a item will grow or strink*/
+.box1{
+    flex-basis: 60%;
+    padding: 50 px 60px;
+    padding-top : 40px;
+}
+/* positioning of h1 , giving more space in the margin bottom*/
+.container2 h1{
+    margin-bottom : 10px;
+}
+/* positioning of p in container2 , giving more space in the margin bottom*/
+.container2 p {
+    margin-bottom: 40px;
+}
+input{
+    width: 100%;
+    padding-bottom :5px;
+}
+/* setting the input box of 100% */
+textarea{
+    width :100%;
+    outline: none;
+    padding: 10px;
+}
+/* styling button in css for contact page */
+button {
+        display: inline-block;
+        background: #000080;
+        color: #fff;
+        padding: 8px 30px;
+        margin: 30px 0;
+        border-radius: 30px;
+        transition: background 0.5s;
+}
+/* changing button background */
+button:hover{
+    background : #008B8B;
+}
+/* radiobox positioning */
+.radiobox{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+/* radiobox positioning */
+.rdbtn{
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+/* Aboutus.html css part */
+.about-us-p{
+    padding : 20px;
+    font-size : 25px;
+}
+
